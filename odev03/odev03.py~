@@ -1,0 +1,38 @@
+__author__ = 'saddam'
+
+import threading
+import time
+
+s = 3
+n = 3
+l = 5
+
+a = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+ca = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+for i in range(26):
+    ca[s-i-1] = a[25-i]
+
+print(a)
+print (ca)
+
+r = open('doc1.txt','r+')
+str = r.read(100);
+print "Read String is : ", str
+r.close()
+
+def cipher(str):
+    L = list(str)
+    for i in range(100):
+        for k in range(26):
+            if L[i] == a[k]:
+                L[i] = ca[k]
+    ''.join(L)
+
+cipher(str)
+
+print "Read String is : ", str
+w = open('doc2.txt','w')
+w.write(str);
+w.close()
+
