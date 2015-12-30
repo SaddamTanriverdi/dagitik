@@ -1,0 +1,26 @@
+
+Projeyi test etme aşamasında problem yaşadım.
+Gui kodu ile entegrasyonda hata verdiğinden test edemedim. 
+
+          Kodun Yazılma Düzeni 
+Negotiator:
+  negotiator_server
+  negotiator_client
+
+Peer:
+  peer_server
+  peer_client
+
+
+
+                             Saddam Tanrıverdi_11401593
+
+
+
+
+
+
+
+
+
+
